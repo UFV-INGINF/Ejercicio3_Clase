@@ -10,6 +10,7 @@ public class Main {
 
     public static void menu() {
         Scanner scanner = new Scanner(System.in);
+        Operations operations = new Operations();
         System.out.println("1. Sumar");
         System.out.println("2. Restar");
         System.out.println("3. Multiplicar");
@@ -25,6 +26,13 @@ public class Main {
             switch (option) {
                 case 1:
                     System.out.println("Seleccionó sumar");
+                    System.out.println("Ingrese el primer número: ");
+                    int a = Integer.parseInt(scanner.nextLine());
+                    System.out.println("Ingrese el segundo número: ");
+                    int b = Integer.parseInt(scanner.nextLine());
+                    System.out.println("El resultado de la suma es: " + operations.sum(a, b));
+                    menu();
+
                     break;
                 default:
                     System.out.println("Opción no válida");
