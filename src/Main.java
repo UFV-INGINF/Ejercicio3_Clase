@@ -52,7 +52,9 @@ public class Main {
                     System.out.println("El resultado de la multiplicación es: " + operations.multiply(a, b));
                     menu();
                     break;
-
+                case 5:
+                    System.out.println("Adiós");
+                    break;
                 default:
                     System.out.println("Opción no válida");
                     menu();
